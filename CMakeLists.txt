@@ -1,0 +1,12 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+SET(project_name "stitching")
+PROJECT(${project_name})
+
+SET(CALIBRATION_NAME "calibration")
+
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output/bin)
+SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output/lib)
+
+#ADD_SUBDIRECTORY(opencv2/modules/core)
+ADD_SUBDIRECTORY(stitching)
+ADD_SUBDIRECTORY(calibration)
